@@ -33,7 +33,7 @@ count = 10
 //:
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
 
-
+greeting = "challenge 1 answer"
 
 //: *Note:* unlike math, where `x = 10` and `10 = x` are interchangeable, in programming the variable goes on the left of the `=` symbol, and the new value goes on the right.
 
@@ -41,10 +41,10 @@ count = 10
 //: ### Challenge 2
 //:
 //: We want to add 1 to whatever the value of `count` is now. We could manually look at the value in `count`, see that it is 10 and put 11 into `count` using the assignment operator. This works, but we can do it in a better way. We can set count to be whatever count is, plus 1. See if you can figure out the syntax for this.
-
+count + 1
 
 //: *Note:* If you're ever unsure of the contents of a variable in a playground, write the variable on a line by itself and you will see its value printed to the right of it. Or you can use the `print` function like so: `print(variableName)`.
-
+count
 
 //: ## Types
 //:
@@ -63,17 +63,17 @@ count
 //:
 //: Int - a whole number. ex) 5
 //:
-//: Double - a number with more precision. ex) 5.55  
+//: Double - a number with more precision. ex) 5.55
 
 //: ### Challenge 3
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: Double
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is: Bool
 
 
 //: ## Type Inference
@@ -89,7 +89,6 @@ var height: Double = 10
 //: Test this out. Try setting the value of `count` to be `height`:
 
 
-
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
 
 
@@ -102,7 +101,8 @@ var height: Double = 10
 //: Print out the uppercase and lowercase versions of the string below:
 
 var schoolName = "Lightouse Labs"
-
+greeting.uppercaseString
+greeting.lowercaseString
 
 
 //: THE END
